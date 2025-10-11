@@ -27,7 +27,7 @@ Base URL: [`http://localhost:8080/animals`](http://localhost:8080/animals)
 
 ---
 
-1. ### GET `/` 
+### 1. GET `/` 
 Gets a list of all animals in the database.
 
 #### Response - JSON array of animal objects:
@@ -48,7 +48,7 @@ Gets a list of all animals in the database.
 ]
 
 
-2. ### [`/{animalId}`](http://localhost:8080/animals/1) (GET)
+### 2. ### [`/{animalId}`](http://localhost:8080/animals/1) (GET)
 Gets an individual animal in the system. Each animal is identified by a numeric `animalId`
 
 #### Parameters
@@ -66,7 +66,7 @@ Gets an individual animal in the system. Each animal is identified by a numeric 
 
 ```
 
-3. ### [`/name`](http://localhost:8080/animals/name?key={name}) (GET)
+### 3. ### [`/name`](http://localhost:8080/animals/name?key={name}) (GET)
 Gets a list of animals with a name that contains the given string.
 
 #### Parameters
@@ -86,7 +86,7 @@ Gets a list of animals with a name that contains the given string.
 
 ```
 
-4. ### [`/age/{age}`](http://localhost:8080/animals/age/{age}) (GET)
+### 4. ### [`/age/{age}`](http://localhost:8080/animals/age/{age}) (GET)
 Gets a list of animals for a named age.
 
 #### Parameters
@@ -105,7 +105,7 @@ Gets a list of animals for a named age.
 ]
 
 ```
-5. ### [`/type/{animalType}`](http://localhost:8080/animals/type/{animalType}) (GET)
+### 5. ### [`/type/{animalType}`](http://localhost:8080/animals/type/{animalType}) (GET)
 Gets a list of animals with a specific animalType.
 
 #### Parameters
@@ -130,7 +130,7 @@ Gets a list of animals with a specific animalType.
 ]
 
 ```
-6. ### [`/`](http://localhost:8080/animals) (POST)
+### 6. ### [`/`](http://localhost:8080/animals) (POST)
 Create  a new animal entry
 
 #### Request Body
@@ -155,7 +155,7 @@ An animal object. Note the object does not include an ID as this is autogenerate
 
 ```
 
-7. ### [`/{animalId}`](http://localhost:8080/animals/3) (PUT)
+### 7. ### [`/{animalId}`](http://localhost:8080/animals/3) (PUT)
 Update an existing animal.
 
 #### Parameters
@@ -182,7 +182,7 @@ A animal object with the updates.
 
 ```
 
-8. ### [`/{animalId}`](http://localhost:8080/animals/3) (DELETE)
+### 8. ### [`/{animalId}`](http://localhost:8080/animals/3) (DELETE)
 Delete an existing animal.
 
 #### Parameters
