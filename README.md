@@ -32,7 +32,7 @@ Gets a list of all animals in the database.
 
 #### Response - JSON array of animal objects:
 ```json
-[
+
   {
     "animalId": 1,
     "name": "Mike",
@@ -45,7 +45,7 @@ Gets a list of all animals in the database.
     "age": 2,
     "animalType": "Cat"
   }
-]
+```
 
 
 ### 2. [`/{animalId}`](http://localhost:8080/animals/1) (GET)
