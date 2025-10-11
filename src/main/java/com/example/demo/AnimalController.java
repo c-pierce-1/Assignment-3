@@ -1,3 +1,5 @@
+package com.example.demo;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -37,8 +39,8 @@ public class AnimalController{
     }
 
     @GetMapping("/animals/type/{type}")
-    public Object getAnimalsByType(@PathVariable String type){
-        return animalService.getAnimalsByType(type);
+    public Object getAnimalsByAnimalType(@PathVariable String type){
+        return animalService.getAnimalsByAnimalType(type);
     }
 
     @GetMapping("/animals/olderThan")

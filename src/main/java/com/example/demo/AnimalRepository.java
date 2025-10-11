@@ -1,3 +1,5 @@
+package com.example.demo;
+
 import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
@@ -7,7 +9,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface AnimalRepository extends JpaRepository<Animal, Long> {
-    List<Animal> getAnimalsByType(String animalType);
+    List<Animal> getAnimalsByAnimalType(String animalType);
 
     @Query(value = "SELECT * FROM animals a WHERE a.age >= ?1", nativeQuery = true)
     List<Animal> getOlderAnimals(double age);

@@ -1,3 +1,5 @@
+package com.example.demo;
+
 import java.io.IOException;
 import java.io.File;
 
@@ -25,8 +27,8 @@ public class AnimalService{
         return animalRepository.getAnimalsByName(name);
     }
 
-    public Object getAnimalsByType(String animalType){
-        return animalRepository.getAnimalsByType(animalType);
+    public Object getAnimalsByAnimalType(String animalType){
+        return animalRepository.getAnimalsByAnimalType(animalType);
     }
 
     public Object getOlderAnimals(double age){
