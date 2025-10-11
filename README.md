@@ -27,7 +27,7 @@ Base URL: [`http://localhost:8080/animals`](http://localhost:8080/animals)
 
 ---
 
-### 1. GET `/` 
+1. ### GET `/` 
 Gets a list of all animals in the database.
 
 #### Response - JSON array of animal objects:
