@@ -56,15 +56,29 @@ public class AnimalController{
         return new ResponseEntity<>(animalService.getOlderAnimals(age), HttpStatus.OK);
     }
 
-    @PostMapping("/animals")
-    public Object addAnimal(@RequestBody Animal animal){
-        return animalService.addAnimal(animal);
+    @GetMapping("/animals/new")
+    public String showCreateForm(Model model){
+        model.addAttribute("animal", new Animal());
+        return "animal-create";
     }
 
-    @PutMapping("/animals/{id}")
-    public Animal updateAnimal(@PathVariable Long id, @RequestBody Animal animal){
-        animalService.updateAnimal(id, animal);
-        return animalService.getAnimalById(id);
+    @GetMapping("/animals/updateForm/{id}")
+    public String showUpdateForm(@PathVariable Long id, Model model){
+        Animal animal = animalService.getAnimalById(id);
+        model.addAttribute("animal", animal);
+        return "animal-update";
+    }
+
+    @PostMapping("/animals/new")
+    public String addAnimal( Animal animal){
+        Animal newAnimal = animalService.addAnimal(animal);
+        return "redirect:/animals/" + newAnimal.getAnimalId();
+    }
+
+    @PutMapping("/animals/update")
+    public String updateAnimal(Animal animal){
+        animalService.updateAnimal(animal.getAnimalId(), animal);
+        return "redirect:/animals/" + animal.getAnimalId();
     }
 
     @DeleteMapping("/animals/{id}")
