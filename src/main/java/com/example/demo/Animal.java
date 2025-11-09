@@ -21,6 +21,7 @@ public class Animal{
     private String description; 
     private double age;
     private String animalType;
+    private String imageUrl;
 
     public Animal(){
     }
@@ -74,6 +75,14 @@ public class Animal{
 
     public String getAnimalType(){
         return animalType;
+    }
+
+    public String getImageUrl(){
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl){
+        this.imageUrl = imageUrl;
     }
 
     public void setAnimalType(String animalType){

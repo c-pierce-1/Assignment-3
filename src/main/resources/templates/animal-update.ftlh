@@ -42,6 +42,11 @@
             <input type="number" step="0.1" class="form-control" id="age" name="age" value="${animal.age}">
         </div>
 
+        <div class="mb-3 col-md-5">
+            <label for="imageUrl" class="form-label">Image URL:</label>
+            <input type="text" class="form-control" id="imageUrl" name="imageUrl" value="${animal.imageUrl}">
+        </div>
+
         <div class="d-grid mt-3">
             <button type="submit" class="btn btn-outline-warning">Save Changes</button>
         </div>

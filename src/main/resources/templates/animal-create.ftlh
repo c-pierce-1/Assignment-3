@@ -23,7 +23,7 @@
             <label for="name" class="form-label">Animal name:</label>
             <input type="text" class="form-control" id="name" name="name" placeholder="Your animal's name...">
         </div>
-        
+
         <div class="mb-3 col-md-5">
             <label for="description" class="form-label">Description:</label>
             <textarea class="form-control" id="description" name="description"
@@ -39,6 +39,11 @@
         <div class="mb-3 col-md-2">
             <label for="age" class="form-label">Age:</label>
             <input type="number" step="0.1" class="form-control" id="age" name="age" placeholder="e.g., 3.5">
+        </div>
+
+        <div class="mb-3 col-md-5">
+            <label for="imageUrl" class="form-label">Image URL:</label>
+            <input type="text" class="form-control" id="imageUrl" name="imageUrl" placeholder="Paste URL...">
         </div>
 
         <div class="d-grid mt-3">

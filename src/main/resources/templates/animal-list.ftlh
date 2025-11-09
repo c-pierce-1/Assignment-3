@@ -42,7 +42,7 @@
             <#list animalList as animal>
                 <div class="col-md-4 animal-card">
                     <div class="card h-100" style="width: 20rem; height: 20rem;">
-                        <img src="/src/main/resources/static/Images/orangeCat.jpg" class="card-img-top"
+                        <img src="${animal.imageUrl}" class="card-img-top"
                             alt="${animal.name}">
                         <div class="card-body">
                             <h5 class="card-title text-start">${animal.name}</h5>

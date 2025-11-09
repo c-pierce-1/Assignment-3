@@ -21,7 +21,7 @@
 
     <div class="container text-center">
         <div class="card" style="width: 90rem; height: rem;">
-            <img src="/src/main/resources/static/Images/orangeCat.jpg" class="card-img-top" alt="${animal.name} image">
+            <img src="${animal.imageUrl}" class="card-img-top" alt="${animal.name} image">
             <div class="card-body">
                 <h5 class="card-title">${animal.name}</h5>
                 <p class="card-text">${animal.description}</p>
