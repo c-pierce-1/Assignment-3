@@ -14,7 +14,7 @@
     <nav class="navbar bg-dark">
         <form class="container-fluid justify-content-start">
             <div class="container-fluid" style="font-size:large;">The Cute Animals Gallery</div>
-            <a href="index.html" button class="btn btn-outline-success me-2" type="button">Home</a>
+            <a href="/animals" button class="btn btn-outline-success me-2" type="button">Home</a>
         </form>
     </nav>
     <div class="container my-5">
@@ -31,7 +31,7 @@
             <label for="exampleFormControlInput1" class="form-label">Image URL:</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Paste URL">
             <div class="d-grid mt-3"></div>
-            <a href="index.html" button class="btn btn-outline-primary me-2" type="button">Add animal</a>
+            <a href="/animals" button class="btn btn-outline-primary me-2" type="button">Add animal</a>
         </div>
 
     </div>

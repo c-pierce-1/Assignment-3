@@ -14,7 +14,7 @@
     <nav class="navbar bg-dark">
         <form class="container-fluid justify-content-start">
             <div class="container-fluid" style="font-size:large;">The Cute Animals Gallery</div>
-            <a href="index.html" button class="btn btn-outline-success me-2" type="button">Home</a>
+            <a href="/animals" button class="btn btn-outline-success me-2" type="button">Home</a>
         </form>
     </nav>
 
@@ -27,7 +27,7 @@
                 <p class="card-text">${animal.description}</p>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Type: ${animal.animalType}</h6>
                 <p class="card-text">Age: ${animal.age}</p>
-                <a href="index.html" class="btn btn-primary">Go Home</a>
+                <a href="/animals" class="btn btn-primary">Go Home</a>
             </div>
         </div>
     </div>
