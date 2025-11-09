@@ -28,6 +28,7 @@
                 <h6 class="card-subtitle mb-2 text-body-secondary">Type: ${animal.animalType}</h6>
                 <p class="card-text">Age: ${animal.age}</p>
                 <a href="/animals" class="btn btn-primary">Go Home</a>
+                <a href="/animals/delete/${animal.animalId}" class="btn btn-danger">Delete</a>
             </div>
         </div>
     </div>

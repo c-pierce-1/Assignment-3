@@ -12,8 +12,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.ui.Model;
+
 import java.util.List;
+
 import org.springframework.stereotype.Controller;
+
+import jakarta.websocket.server.PathParam;
 
 
 @Controller
@@ -81,10 +85,10 @@ public class AnimalController{
         return "redirect:/animals/" + animal.getAnimalId();
     }
 
-    @DeleteMapping("/animals/{id}")
-    public Object deleteAnimal(@PathVariable Long id){
+    @GetMapping("/animals/delete/{id}")
+    public String deleteAnimal(@PathVariable Long id){
         animalService.deleteAnimal(id);
-        return animalService.getAllAnimals();
+        return "redirect:/animals";
     }
 
     @PostMapping("/animals/writeFile")

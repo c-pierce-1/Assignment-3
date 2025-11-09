@@ -48,6 +48,7 @@
                             <h5 class="card-title text-start">${animal.name}</h5>
                             <p class="card-text text-start">${animal.description}</p>
                             <a href="/animals/${animal.animalId}" class="btn btn-primary">Learn more</a>
+                            <a href="/animals/delete/${animal.animalId}" class="btn btn-danger">Delete</a>
                         </div>
                     </div>
                 </div>
