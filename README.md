@@ -7,6 +7,9 @@ Simple CRUD API for Animal Objects with JPA (Hibernate)
 ### Live Demo Link
 https://uncg-my.sharepoint.com/:v:/g/personal/chpierce2_uncg_edu/EY4TUC4hwoRGqg17c4uFZ5MBKqcH9o9n-wJQejPQvjo1AQ
 
+### Live MVC Demo Link
+https://uncg-my.sharepoint.com/:v:/g/personal/chpierce2_uncg_edu/EV7b_kXng2FAr2unLDJInvkBp34fPWi1HldScX_NgR8CGQ?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=Y2zXgm
+
 ## Installation
 - Get the project:
     - Clone:
