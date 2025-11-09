@@ -17,24 +17,35 @@
             <a href="/animals" button class="btn btn-outline-success me-2" type="button">Home</a>
         </form>
     </nav>
-    <div class="container my-5">
+
+    <form action="/animals/new" method="POST" class="container my-5">
         <div class="mb-3 col-md-4">
-            <label for="exampleFormControlInput1" class="form-label">Animal name:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Your animal's name...">
+            <label for="name" class="form-label">Animal name:</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Your animal's name...">
         </div>
+        
         <div class="mb-3 col-md-5">
-            <label for="exampleFormControlTextarea1" class="form-label">Description:</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1"
+            <label for="description" class="form-label">Description:</label>
+            <textarea class="form-control" id="description" name="description"
                 placeholder="Tell us more about this animal..." rows="5"></textarea>
         </div>
-        <div class="mb-3 col-md-7">
-            <label for="exampleFormControlInput1" class="form-label">Image URL:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Paste URL">
-            <div class="d-grid mt-3"></div>
-            <a href="/animals" button class="btn btn-outline-primary me-2" type="button">Add animal</a>
+
+        <div class="mb-3 col-md-4">
+            <label for="animalType" class="form-label">Animal Type:</label>
+            <input type="text" class="form-control" id="animalType" name="animalType"
+                placeholder="e.g., Dog, Cat, etc.">
         </div>
 
-    </div>
+        <div class="mb-3 col-md-2">
+            <label for="age" class="form-label">Age:</label>
+            <input type="number" step="0.1" class="form-control" id="age" name="age" placeholder="e.g., 3.5">
+        </div>
+
+        <div class="d-grid mt-3">
+            <button type="submit" class="btn btn-outline-primary">Add animal</button>
+        </div>
+
+    </form>
 
 
 
