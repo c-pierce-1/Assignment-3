@@ -11,16 +11,22 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.ui.Model;
+import java.util.List;
+import org.springframework.stereotype.Controller;
 
-@RestController
+
+@Controller
 public class AnimalController{
 
     @Autowired
     private AnimalService animalService;
 
     @GetMapping("/animals")
-    public Object getAllAnimals(){
-        return animalService.getAllAnimals();
+    public String getAllAnimals(Model model){
+        List<Animal> animals = (List<Animal>) animalService.getAllAnimals();
+        model.addAttribute("animalList", animals);
+        return "animal-list";
     }
 
     @GetMapping("/animals/name")
@@ -34,8 +40,10 @@ public class AnimalController{
     }
 
     @GetMapping("/animals/{id}")
-    public Animal getAnimalById(@PathVariable long id){
-        return animalService.getAnimalById(id);
+    public String getAnimalById(@PathVariable long id, Model model){
+        Animal animal = animalService.getAnimalById(id);
+        model.addAttribute("animal", animal);
+        return "animal-details";
     }
 
     @GetMapping("/animals/type/{type}")
