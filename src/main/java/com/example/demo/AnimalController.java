@@ -79,7 +79,7 @@ public class AnimalController{
         return "redirect:/animals/" + newAnimal.getAnimalId();
     }
 
-    @PutMapping("/animals/update")
+    @PostMapping("/animals/update")
     public String updateAnimal(Animal animal){
         animalService.updateAnimal(animal.getAnimalId(), animal);
         return "redirect:/animals/" + animal.getAnimalId();
