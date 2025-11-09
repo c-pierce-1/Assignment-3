@@ -13,10 +13,9 @@
 
     <nav class="navbar bg-dark">
         <form class="container-fluid justify-content-start">
-            <div class = "container-fluid" style = "font-size:large;">The Cute Animals Gallery</div>
-            <a href="index.html" button class="btn btn-outline-success me-2" type="button">Home</a>
-            <a href="details.html" button class="btn btn-outline-success me-2" type="button">Featured</a>
-            <a href="about.html" button class="btn btn-sm btn-outline-secondary" type="button">About Us</a>
+            <div class="container-fluid" style="font-size:large;">The Cute Animals Gallery</div>
+            <a href="/animals" button class="btn btn-outline-success me-2" type="button">Home</a>
+            <a href="/animals/10" button class="btn btn-outline-success me-2" type="button">Featured</a>
         </form>
     </nav>
 
@@ -33,64 +32,26 @@
             <form class="d-flex" role="search">
                 <input id="searchInput" class="form-control me-2" type="search" placeholder="Search by name or details"
                     aria-label="Search" />
-                <a href="new-animal-form.html" class="btn btn-primary">Add new animal</a>
+                <a href="/animals/new" class="btn btn-primary">Add new animal</a>
             </form>
         </div>
     </nav>
 
     <div class="container text-center">
         <div class="row g-4">
-            <div class="col-md-4 animal-card">
-                <div class="card h-100" style="width: 20rem; height: 20rem;">
-                    <img src="images/greyCat.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start">Pearl</h5>
-                        <p class="card-text text-start">Energetic 7 month old kitten</p>
-                        <a href="details.html" class="btn btn-primary">Learn more</a>
+            <#list animalList as animal>
+                <div class="col-md-4 animal-card">
+                    <div class="card h-100" style="width: 20rem; height: 20rem;">
+                        <img src="/src/main/resources/static/Images/orangeCat.jpg" class="card-img-top"
+                            alt="${animal.name}">
+                        <div class="card-body">
+                            <h5 class="card-title text-start">${animal.name}</h5>
+                            <p class="card-text text-start">${animal.description}</p>
+                            <a href="/animals/${animal.animalId}" class="btn btn-primary">Learn more</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4 animal-card">
-                <div class="card h-100" style="width: 20rem; height: 20rem;">
-                    <img src="images/orangeCat.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start">Butter Ball</h5>
-                        <p class="card-text text-start">Innocent looking chaotic orange cat</p>
-                        <a href="details.html" class="btn btn-primary">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animal-card">
-                <div class="card h-100" style="width: 20rem; height: 20rem;">
-                    <img src="images/nemo.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start">Pipey</h5>
-                        <p class="card-text text-start">The most serious clown(fish) you've ever met</p>
-                        <a href="details.html" class="btn btn-primary">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animal-card">
-                <div class="card h-100" style="width: 20rem; height: 20rem;">
-                    <img src="images/kingFisher.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start">Tealjuana</h5>
-                        <p class="card-text text-start">Beautiful common Kingfisher</p>
-                        <a href="details.html" class="btn btn-primary">Learn more</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 animal-card">
-                <div class="card h-100" style="width: 20rem; height: 20rem;">
-                    <img src="images/parrot.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title text-start">Twitter</h5>
-                        <p class="card-text text-start">Orange chinned Parakeet</p>
-                        <a href="details.html" class="btn btn-primary">Learn more</a>
-                    </div>
-                </div>
-            </div>
-
+            </#list>
         </div>
     </div>
 

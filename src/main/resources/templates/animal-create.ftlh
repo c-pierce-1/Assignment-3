@@ -15,8 +15,6 @@
         <form class="container-fluid justify-content-start">
             <div class="container-fluid" style="font-size:large;">The Cute Animals Gallery</div>
             <a href="index.html" button class="btn btn-outline-success me-2" type="button">Home</a>
-            <a href="details.html" button class="btn btn-outline-success me-2" type="button">Featured</a>
-            <a href="about.html" button class="btn btn-sm btn-outline-secondary" type="button">About Us</a>
         </form>
     </nav>
     <div class="container my-5">

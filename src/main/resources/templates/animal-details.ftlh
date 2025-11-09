@@ -15,8 +15,6 @@
         <form class="container-fluid justify-content-start">
             <div class="container-fluid" style="font-size:large;">The Cute Animals Gallery</div>
             <a href="index.html" button class="btn btn-outline-success me-2" type="button">Home</a>
-            <a href="details.html" button class="btn btn-outline-success me-2" type="button">Featured</a>
-            <a href="about.html" button class="btn btn-sm btn-outline-secondary" type="button">About Us</a>
         </form>
     </nav>
 
@@ -26,7 +24,7 @@
             <img src="/src/main/resources/static/Images/orangeCat.jpg" class="card-img-top" alt="${animal.name} image">
             <div class="card-body">
                 <h5 class="card-title">${animal.name}</h5>
-                <p class="card-text">${anima.description}</p>
+                <p class="card-text">${animal.description}</p>
                 <h6 class="card-subtitle mb-2 text-body-secondary">Type: ${animal.animalType}</h6>
                 <p class="card-text">Age: ${animal.age}</p>
                 <a href="index.html" class="btn btn-primary">Go Home</a>
